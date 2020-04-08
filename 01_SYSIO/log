@@ -1,0 +1,15 @@
+stdio --> sysio
+====================================
+r  -> O_RDONLY						|
+r+ -> O_RDWR						|
+									|
+w  -> O_WRONLY | O_CREAT | O_TRUNC  |
+w+ -> O_RDWR   | O_CREAT | O_TRUNC  |
+									|
+a  -> O_WRONLY | O_CREAT | O_APPEND |
+a+ -> O_RDWR   | O_CREAT | O_APPEND |
+====================================
+
+STDIN_FILENO
+STDOUT_FILENO
+STDERR_FILENO
